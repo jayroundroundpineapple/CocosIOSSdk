@@ -1,5 +1,5 @@
 {
-  "__version__": "1.0.9",
+  "__version__": "1.0.12",
   "modules": {
     "configs": {
       "defaultConfig": {
@@ -24,7 +24,7 @@
             "_value": true
           },
           "3d": {
-            "_value": false
+            "_value": true
           },
           "meshopt": {
             "_value": false
@@ -32,11 +32,11 @@
           "2d": {
             "_value": true
           },
-          "xr": {
+          "sorting-2d": {
             "_value": false
           },
           "rich-text": {
-            "_value": false
+            "_value": true
           },
           "mask": {
             "_value": true
@@ -54,7 +54,7 @@
             "_value": true
           },
           "particle": {
-            "_value": false
+            "_value": true
           },
           "physics": {
             "_value": false,
@@ -101,7 +101,7 @@
             "_value": false
           },
           "primitive": {
-            "_value": false
+            "_value": true
           },
           "profiler": {
             "_value": true
@@ -122,34 +122,34 @@
             "_value": true
           },
           "video": {
-            "_value": false
+            "_value": true
           },
           "webview": {
-            "_value": false
+            "_value": true
           },
           "tween": {
             "_value": true
           },
           "websocket": {
-            "_value": false
+            "_value": true
           },
           "websocket-server": {
             "_value": false
           },
           "terrain": {
-            "_value": false
+            "_value": true
           },
           "light-probe": {
-            "_value": false
+            "_value": true
           },
           "tiled-map": {
-            "_value": false
+            "_value": true
           },
           "vendor-google": {
             "_value": false
           },
           "spine": {
-            "_value": false,
+            "_value": true,
             "_option": "spine-3.8"
           },
           "spine-3.8": {
@@ -165,7 +165,7 @@
             }
           },
           "dragon-bones": {
-            "_value": false
+            "_value": true
           },
           "marionette": {
             "_value": true
@@ -185,26 +185,43 @@
           },
           "legacy-pipeline": {
             "_value": false
+          },
+          "xr": {
+            "_value": false
           }
         },
-        "flags": {},
+        "flags": {
+          "LOAD_SPINE_MANUALLY": false
+        },
         "includeModules": [
           "2d",
+          "3d",
           "affine-transform",
           "animation",
           "audio",
           "base",
           "custom-pipeline",
+          "dragon-bones",
           "gfx-webgl",
           "graphics",
+          "light-probe",
           "marionette",
           "mask",
+          "particle",
           "particle-2d",
+          "primitive",
           "profiler",
+          "rich-text",
           "skeletal-animation",
+          "spine-3.8",
+          "terrain",
+          "tiled-map",
           "tween",
           "ui",
-          "ui-skew"
+          "ui-skew",
+          "video",
+          "websocket",
+          "webview"
         ],
         "noDeprecatedFeatures": {
           "value": false,
@@ -214,9 +231,6 @@
     },
     "cache": {
       "base": {
-        "_value": true
-      },
-      "graphcis": {
         "_value": true
       },
       "gfx-webgl": {
@@ -332,11 +346,11 @@
       "procedural-animation": {
         "_value": false
       },
-      "custom-pipeline": {
-        "_value": false
-      },
       "graphics": {
         "_value": true
+      },
+      "render-pipeline": {
+        "_option": "legacy-pipeline"
       }
     },
     "flags": {},
@@ -360,7 +374,8 @@
       "ui",
       "video",
       "websocket",
-      "webview"
+      "webview",
+      "legacy-pipeline"
     ],
     "noDeprecatedFeatures": {
       "value": false,

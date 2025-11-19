@@ -1,6 +1,6 @@
 // IAACInitManager.m
 #import "IAACInitManager.h"
-#import <PixelInsight/PixelInsight.h>
+#import <SupaVapo/SupaVapo.h>
 #import "IAACHelper.h"
 #import <UIKit/UIKit.h>
 

@@ -2,7 +2,7 @@
 #import "IAACCoreAdsJSB.h"
 #import "IAACInitManager.h"
 #import "IAACHelper.h"
-#import <PixelInsight/PixelInsight.h>
+#import <SupaVapo/SupaVapo.h>
 #include "cocos/bindings/jswrapper/SeApi.h"
 #import <UIKit/UIKit.h>  // 新增：导入 UIKit 框架
 
